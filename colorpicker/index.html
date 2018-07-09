@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body id="gradient">
+
+    <h1>Welcome</h1>
+<div class="color">
+    <label for="volume">R</label>
+    <input type="range" class="row1"   value="#FF7F50">
+    <label for="volume">G</label>
+    <input type="range" class="row2"  value="#D8BFD8">
+    <label for="volume">B</label>
+    <input type="range" class="row3"  value="#D8BFD8">
+</div>
+
+<div class="color2">
+        <label for="volume">R</label>
+        <input type="range" class="row1"   value="#FF7F50">
+        <label for="volume">G</label>
+        <input type="range" class="row2"  value="#D8BFD8">
+        <label for="volume">B</label>
+        <input type="range" class="row3"  value="#D8BFD8">
+    </div>
+
+    <script>
+    var css = document.querySelector("h2");
+var color1 = document.querySelector(".color1");
+var color2 = document.querySelector(".color2");
+var body = document.getElementById("gradient");
+
+
+color1.addEventListener("input",function(){
+  body.style.background ="linear-gradient(to right,"+color1.value+", "+color2.value+")";
+  css.textContent = body.style.background;
+  value
+});
+color2.addEventListener("input",function(){
+  body.style.background ="linear-gradient(to right,"+color1.value+", "+color2.value+")"; 
+  css.textContent = body.style.background;
+});
+
+</script>
+    
+</body>
+</html>
